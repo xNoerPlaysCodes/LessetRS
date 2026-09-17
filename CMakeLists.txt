@@ -2,7 +2,7 @@
 # CMakeLists.txt written by Noerlol, https://github.com/xNoerPlaysCodes
 
 cmake_minimum_required(VERSION 4.1)
-project(LessetG C CXX)
+project(Lesset C CXX)
 
 if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Debug CACHE STRING "" FORCE)
@@ -63,12 +63,12 @@ include_directories(${GLFW_DIR}/deps)
 
 file(GLOB sources *.cpp)
 
-add_executable(LessetG ${sources})
-target_include_directories(LessetG PRIVATE
+add_executable(Lesset ${sources})
+target_include_directories(Lesset PRIVATE
         ${libimgui_SOURCE_DIR}
         ${libimgui_SOURCE_DIR}/backends
         ${libimgui_SOURCE_DIR}/misc/cpp
         ${libimplot_SOURCE_DIR}
         ${libglfw_SOURCE_DIR}/include
 )
-target_link_libraries(LessetG ${LIBRARIES} imgui glfw implot nfd)
+target_link_libraries(Lesset ${LIBRARIES} imgui glfw implot nfd)

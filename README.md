@@ -1,4 +1,4 @@
-# Lesset
+# LessetRS
 
 Calculator with...
 
